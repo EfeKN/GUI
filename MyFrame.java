@@ -18,7 +18,7 @@ public class MyFrame extends JFrame {
         //this.setResizable(false);
 
         //Set logo for the GUI
-        ImageIcon logo = new ImageIcon("hp.png");
+        ImageIcon logo = new ImageIcon("Images/hp.png");
         this.setIconImage(logo.getImage());
 
         //Create border

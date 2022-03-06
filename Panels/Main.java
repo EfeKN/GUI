@@ -2,12 +2,15 @@ package Panels;
 
 import java.awt.Color;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Main {
       
       public static void main(String[] args) {
+
+            ImageIcon logo = new ImageIcon("Images/Windows-icon.png");
 
             JPanel mainPanel = new JPanel();
             mainPanel.setBackground(Color.decode("#747474"));
@@ -30,12 +33,14 @@ public class Main {
             subPanel3.setBounds(126,126,122,122);
             
             JFrame frame = new JFrame();
+            frame.setIconImage(logo.getImage());
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(264,287);
             frame.setVisible(true);
             frame.setLayout(null);
             frame.setLocationRelativeTo(null);
-            frame.setResizable(false);
+            //frame.setResizable(false);
+            
 
             mainPanel.add(subPanel1);
             mainPanel.add(subPanel2);
